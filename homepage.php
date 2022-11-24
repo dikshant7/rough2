@@ -34,6 +34,8 @@
               <div class="col-sm-12 col-md img text-center">
                 <img src="images/bank.png" class="img-fluid pt-2">
               </div>
+              <span class="details">Upload File</span>
+              <input class="input" type="file" name="document" id="document" >
             </div>
           <br>
       </div>
