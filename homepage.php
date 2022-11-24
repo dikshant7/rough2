@@ -28,7 +28,6 @@
               <div class="col-sm-12 col-md">
                 <div class="heading text-center my-5">
                   <h2>Welcome to</h2>
-                  <h1>Development Bank</h1>
                 </div>
               </div>
               <div class="col-sm-12 col-md img text-center">
