@@ -6,12 +6,7 @@
         include 'partials/_dbconnect.php';
         $firstname=$_POST['firstname'];
         $lastname=$_POST['lastname'];
-        $age=$_POST['age'];
-        $gender =$_POST['gender'];
         $phone=$_POST['phone'];
-        $email=$_POST['email'];
-        $city=$_POST['city'];
-        $balance=$_POST['balance'];
         $password=$_POST['password'];
         $check="SELECT * FROM `user` WHERE `phone`='$phone'";
         $r=mysqli_query($conn,$check);
@@ -19,7 +14,7 @@
         if($numc==0)
         {
         //$sql ="INSERT INTO `DshHNFZcBN`. `user` ( `userid`,`firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`,`date`) VALUES ( NULL,'$firstname', '$lastname', '$age', '$gender', '$phone', '$email', '$city', CURRENT_TIMESTAMP); "; 
-        $sql="INSERT INTO `user` (`userid`, `firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`, `date`,`balance`, `password`) VALUES (NULL,'$firstname', '$lastname', '$age', '$gender', '$phone', '$email', '$city', CURRENT_TIMESTAMP,'$balance', '$password');" ;
+        $sql="INSERT INTO `user` (`userid`, `firstname`, `lastname`,`phone`,`password`) VALUES (NULL,'$firstname', '$lastname', '$phone', '$password');" ;
         $result=mysqli_query($conn,$sql);
         if($result){
             $s=true;
@@ -72,29 +67,9 @@
             <span class="details">Last Name</span>
             <input class="input" type="text" name="lastname" id="lastname" placeholder="Enter your last name"  required>
         </div>
-        <div class="input-box">
-            <span class="details">Age</span>
-            <input class="input" type="age" name="age" id="age" placeholder="Enter your age" required>
-        </div>
-        <div class="input-box">
-            <span class="details">Gender</span>
-            <input class="input" type="gender" name="gender" id="gender" placeholder="Enter your gender" required>
-        </div>
          <div class="input-box">
              <span class="details">Phone</span>
             <input class="input" type="phone" name="phone" id="phone" placeholder="Enter 10 digit phone number" required>
-        </div>
-        <div class="input-box">
-            <span class="details">E-Mail</span>
-            <input class="input" type="email" name="email" id="email" placeholder="Enter your email" required>   
-        </div>
-        <div class="input-box">
-            <span class="details">City</span>
-            <input class="input" type="city" name="city" id="city" placeholder="Enter your city" required>
-        </div>
-        <div class="input-box">
-            <span class="details">Balance</span>
-            <input class="input" type="balance" name="balance" id="balance" placeholder="Enter your balance (less than 1 crore)" required>
         </div>
         <div class="input-box">
             <span class="details">Password</span>

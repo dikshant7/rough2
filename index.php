@@ -60,7 +60,7 @@
             <a href="forgotPassword.php" class="fpw">Forgot Password?</a>
             <button class="submit" type="submit" >LOGIN</button><br><br>
             <center><p class="subtitle">OR</p><center>
-            <a href="createUser.php" class="register">Register Here</a>
+            <a href="createuser.php" class="register">Register Here</a>
         </div>
         </form>
 </body>
