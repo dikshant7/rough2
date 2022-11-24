@@ -14,7 +14,7 @@
         if($numc==0)
         {
         //$sql ="INSERT INTO `DshHNFZcBN`. `user` ( `userid`,`firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`,`date`) VALUES ( NULL,'$firstname', '$lastname', '$age', '$gender', '$phone', '$email', '$city', CURRENT_TIMESTAMP); "; 
-        $sql="INSERT INTO `user` (`userid`, `firstanme`, `lastname`, `phone`, `password`) VALUES (NULL, 'firstanme', 'lastname', 'phone', 'password');" ;
+        $sql="INSERT INTO `user` (`userid`, `firstanme`, `lastname`, `phone`, `password`) VALUES (NULL, '$firstanme', '$lastname', '$phone', '$password');" ;
         $result=mysqli_query($conn,$sql);
         if($result){
             $s=true;
